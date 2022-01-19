@@ -1,0 +1,319 @@
+
+PS C:\SRC\Java\dwebapp-vert-x> mvn clean install -D skipTests
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Scalable Distributed Vue WebApps Based on Vert.x Actors  
+          [pom]
+[INFO] Dashboard webapp
+          [jar]
+[INFO] User webapp
+          [jar]
+[INFO] 
+[INFO] --------------< com.ntrajic:scalable-vue-webapps-vert-x >---------------
+[INFO] Building Scalable Distributed Vue WebApps Based on Vert.x Actors 1.0 [1/3]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ scalable-vue-webapps-vert-x ---
+[INFO] Deleting C:\SRC\Java\dwebapp-vert-x\target
+[INFO]
+[INFO] --- maven-shade-plugin:3.2.3:shade (default) @ scalable-vue-webapps-vert-x ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ 
+scalable-vue-webapps-vert-x ---
+[INFO] Installing C:\SRC\Java\dwebapp-vert-x\pom.xml to C:\Users\Nik-i7\.m2\repository\com\ntrajic\scalable-vue-webapps-vert-x\1.0\scalable-vue-webapps-vert-x-1.0.pom
+[INFO]
+[INFO] ----------------< com.ntrajic:dashboard-webapp-vert-x >-----------------
+[INFO] Building Dashboard webapp 1.0
+          [2/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ dashboard-webapp-vert-x ---
+[INFO] Deleting C:\SRC\Java\dwebapp-vert-x\dashboard-webapp-vert-x\target
+[INFO]
+[INFO] --- frontend-maven-plugin:1.10.0:install-node-and-yarn (install node and yarn) @ dashboard-webapp-vert-x ---
+[INFO] Node v12.16.3 is already installed.
+[INFO] Yarn 1.22.4 is already installed.
+[INFO]
+[INFO] --- frontend-maven-plugin:1.10.0:yarn (yarn install) @ dashboard-webapp-vert-x ---
+[INFO] Running 'yarn install' in C:\SRC\Java\dwebapp-vert-x\dashboard-webapp-vert-x
+[INFO] yarn install v1.22.4
+[INFO] [1/4] Resolving packages...
+[INFO] success Already up-to-date.
+[INFO] Done in 0.51s.
+[INFO]
+[INFO] --- frontend-maven-plugin:1.10.0:yarn (yarn build) @ dashboard-webapp-vert-x ---
+[INFO] Running 'yarn build' in C:\SRC\Java\dwebapp-vert-x\dashboard-webapp-vert-x
+[INFO] yarn run v1.22.4
+[INFO] $ vue-cli-service build
+[INFO] 
+[INFO] -  Building for production...
+[INFO] Browserslist: caniuse-lite is outdated. Please run:
+[INFO] npx browserslist@latest --update-db
+[INFO]  WARNING  Compiled with 3 warnings12:54:42 PM
+[INFO]
+[INFO]  warning
+[INFO]
+[INFO] asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+[INFO] This can impact web performance.
+[INFO] Assets:
+[INFO]   js/chunk-vendors.45afd571.js (434 KiB)
+[INFO]
+[INFO]  warning
+[INFO]
+[INFO] entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can 
+impact web performance.
+[INFO] Entrypoints:
+[INFO]   app (443 KiB)
+[INFO]       js/chunk-vendors.45afd571.js
+[INFO]       css/app.a3135e56.css
+[INFO]       js/app.418510e3.js
+[INFO]
+[INFO]
+[INFO]  warning
+[INFO]
+[INFO] webpack performance recommendations:
+[INFO] You can limit the size of your bundles by using import() 
+or require.ensure to lazy load some parts of your application.  
+[INFO] For more info visit https://webpack.js.org/guides/code-splitting/
+[INFO]
+[INFO]   File                                 Size
+ Gzipped
+[INFO]
+[INFO]   dist\js\chunk-vendors.45afd571.js    434.15 KiB        
+ 130.61 KiB
+[INFO]   dist\js\app.418510e3.js              8.88 KiB
+ 3.18 KiB
+[INFO]   dist\css\app.a3135e56.css            0.21 KiB
+ 0.11 KiB
+[INFO]
+[INFO]   Images and other types of assets omitted.
+[INFO]
+[INFO]  DONE  Build complete. The dist directory is ready to be 
+deployed.
+[INFO]  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+[INFO]
+[INFO] Done in 5.39s.
+[INFO]
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ dashboard-webapp-vert-x ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ dashboard-webapp-vert-x ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to C:\SRC\Java\dwebapp-vert-x\dashboard-webapp-vert-x\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:copy-resources (copy-resources) @ dashboard-webapp-vert-x ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.       
+[INFO] Copying 7 resources
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ dashboard-webapp-vert-x ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\SRC\Java\dwebapp-vert-x\dashboard-webapp-vert-x\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ dashboard-webapp-vert-x ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ dashboard-webapp-vert-x ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ dashboard-webapp-vert-x ---
+[INFO] Building jar: C:\SRC\Java\dwebapp-vert-x\dashboard-webapp-vert-x\target\dashboard-webapp-vert-x-1.0.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:3.2.3:shade (default) @ dashboard-webapp-vert-x ---
+[INFO] Including io.vertx:vertx-rx-java2:jar:4.0.3 in the shaded jar.
+[INFO] Including io.vertx:vertx-core:jar:4.0.3 in the shaded jar.
+[INFO] Including io.netty:netty-common:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-buffer:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-handler:jar:4.1.60.Final in the 
+shaded jar.
+[INFO] Including io.netty:netty-codec:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-handler-proxy:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec-socks:jar:4.1.60.Final in 
+the shaded jar.
+[INFO] Including io.netty:netty-codec-http:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec-http2:jar:4.1.60.Final in 
+the shaded jar.
+[INFO] Including io.netty:netty-resolver:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-resolver-dns:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec-dns:jar:4.1.60.Final in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-core:jar:2.11.3 in the shaded jar.
+[INFO] Including io.vertx:vertx-rx-java2-gen:jar:4.0.3 in the shaded jar.
+[INFO] Including io.reactivex.rxjava2:rxjava:jar:2.2.12 in the shaded jar.
+[INFO] Including org.reactivestreams:reactive-streams:jar:1.0.3 
+in the shaded jar.
+[INFO] Including io.vertx:vertx-rx-gen:jar:4.0.3 in the shaded jar.
+[INFO] Including io.vertx:vertx-codegen:jar:4.0.3 in the shaded 
+jar.
+[INFO] Including io.vertx:vertx-web:jar:4.0.3 in the shaded jar.[INFO] Including io.vertx:vertx-web-common:jar:4.0.3 in the shaded jar.
+[INFO] Including io.vertx:vertx-auth-common:jar:4.0.3 in the shaded jar.
+[INFO] Including io.vertx:vertx-bridge-common:jar:4.0.3 in the shaded jar.
+[INFO] Including io.vertx:vertx-web-client:jar:4.0.3 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-classic:jar:1.2.3 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-core:jar:1.2.3 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.25 in the shaded jar.
+[INFO] Including io.vertx:vertx-kafka-client:jar:4.0.3 in the shaded jar.
+[INFO] Including org.apache.kafka:kafka-clients:jar:2.6.0 in the shaded jar.
+[INFO] Including com.github.luben:zstd-jni:jar:1.4.4-7 in the shaded jar.
+[INFO] Including org.lz4:lz4-java:jar:1.7.1 in the shaded jar.  
+[INFO] Including org.xerial.snappy:snappy-java:jar:1.1.7.3 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-databind:jar:2.11.3 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.11.3 in the shaded jar.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] dashboard-webapp-vert-x-1.0.jar, jackson-annotations-2.11.3.jar, jackson-core-2.11.3.jar, jackson-databind-2.11.3.jar, kafka-clients-2.6.0.jar, logback-classic-1.2.3.jar, logback-core-1.2.3.jar, lz4-java-1.7.1.jar, netty-buffer-4.1.60.Final.jar, 
+netty-codec-4.1.60.Final.jar, netty-codec-dns-4.1.60.Final.jar, 
+netty-codec-http-4.1.60.Final.jar, netty-codec-http2-4.1.60.Final.jar, netty-codec-socks-4.1.60.Final.jar, netty-common-4.1.60.Final.jar, netty-handler-4.1.60.Final.jar, netty-handler-proxy-4.1.60.Final.jar, netty-resolver-4.1.60.Final.jar, netty-resolver-dns-4.1.60.Final.jar, netty-transport-4.1.60.Final.jar, reactive-streams-1.0.3.jar, rxjava-2.2.12.jar, slf4j-api-1.7.25.jar, snappy-java-1.1.7.3.jar, vertx-auth-common-4.0.3.jar, vertx-bridge-common-4.0.3.jar, vertx-codegen-4.0.3.jar, vertx-core-4.0.3.jar, vertx-kafka-client-4.0.3.jar, vertx-rx-gen-4.0.3.jar, vertx-rx-java2-4.0.3.jar, vertx-rx-java2-gen-4.0.3.jar, vertx-web-4.0.3.jar, vertx-web-client-4.0.3.jar, vertx-web-common-4.0.3.jar, zstd-jni-1.4.4-7.jar define 1 overlapping resources:
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] jackson-annotations-2.11.3.jar, jackson-core-2.11.3.jar, jackson-databind-2.11.3.jar define 1 overlapping resources:  
+[WARNING]   - META-INF/LICENSE
+[WARNING] netty-buffer-4.1.60.Final.jar, netty-codec-4.1.60.Final.jar, netty-codec-dns-4.1.60.Final.jar, netty-codec-http-4.1.60.Final.jar, netty-codec-http2-4.1.60.Final.jar, netty-codec-socks-4.1.60.Final.jar, netty-common-4.1.60.Final.jar, netty-handler-4.1.60.Final.jar, netty-handler-proxy-4.1.60.Final.jar, netty-resolver-4.1.60.Final.jar, netty-resolver-dns-4.1.60.Final.jar, netty-transport-4.1.60.Final.jar define 1 overlapping resources: 
+[WARNING]   - META-INF/io.netty.versions.properties
+[WARNING] jackson-core-2.11.3.jar, jackson-databind-2.11.3.jar define 1 overlapping resources:
+[WARNING]   - META-INF/NOTICE
+[WARNING] maven-shade-plugin has detected that some class files 
+are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the class is copied to the uber jar.[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on  
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See http://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ 
+dashboard-webapp-vert-x ---
+[INFO] Installing C:\SRC\Java\dwebapp-vert-x\dashboard-webapp-vert-x\target\dashboard-webapp-vert-x-1.0.jar to C:\Users\Nik-i7\.m2\repository\com\ntrajic\dashboard-webapp-vert-x\1.0\dashboard-webapp-vert-x-1.0.jar
+[INFO] Installing C:\SRC\Java\dwebapp-vert-x\dashboard-webapp-vert-x\pom.xml to C:\Users\Nik-i7\.m2\repository\com\ntrajic\dashboard-webapp-vert-x\1.0\dashboard-webapp-vert-x-1.0.pom
+[INFO]
+[INFO] -------------------< com.ntrajic:user-webapp-vert-x >-------------------
+[INFO] Building User webapp 1.0
+          [3/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ user-webapp-vert-x ---
+[INFO] Deleting C:\SRC\Java\dwebapp-vert-x\user-webapp-vert-x\target
+[INFO]
+[INFO] --- frontend-maven-plugin:1.10.0:install-node-and-yarn (install node and yarn) @ user-webapp-vert-x ---
+[INFO] Node v12.16.3 is already installed.
+[INFO] Yarn 1.22.4 is already installed.
+[INFO]
+[INFO] --- frontend-maven-plugin:1.10.0:yarn (yarn install) @ user-webapp-vert-x ---
+[INFO] Running 'yarn install' in C:\SRC\Java\dwebapp-vert-x\user-webapp-vert-x
+[INFO] yarn install v1.22.4
+[INFO] [1/4] Resolving packages...
+[INFO] success Already up-to-date.
+[INFO] Done in 0.54s.
+[INFO] 
+[INFO] --- frontend-maven-plugin:1.10.0:yarn (yarn build) @ user-webapp-vert-x ---
+[INFO] Running 'yarn build' in C:\SRC\Java\dwebapp-vert-x\user-webapp-vert-x
+[INFO] yarn run v1.22.4
+[INFO] $ vue-cli-service build
+[INFO] 
+[INFO] -  Building for production...
+[INFO]  DONE  Compiled successfully in 1210ms12:54:51 PM
+[INFO]
+[INFO]   File                                 Size
+ Gzipped
+[INFO]
+[INFO]   dist\js\chunk-vendors.facb852d.js    126.44 KiB        
+ 44.22 KiB
+[INFO]   dist\js\app.17fec229.js              12.60 KiB
+ 2.95 KiB
+[INFO]
+[INFO]   Images and other types of assets omitted.
+[INFO]
+[INFO]  DONE  Build complete. The dist directory is ready to be 
+deployed.
+[INFO]  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+[INFO]
+[INFO] Done in 3.78s.
+[INFO]
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ user-webapp-vert-x ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.       
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ user-webapp-vert-x ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\SRC\Java\dwebapp-vert-x\user-webapp-vert-x\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:copy-resources (copy-resources) @ user-webapp-vert-x ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.       
+[INFO] Copying 6 resources
+[INFO]
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ user-webapp-vert-x ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.       
+[INFO] skip non existing resourceDirectory C:\SRC\Java\dwebapp-vert-x\user-webapp-vert-x\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ user-webapp-vert-x ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ user-webapp-vert-x ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ user-webapp-vert-x ---
+[INFO] Building jar: C:\SRC\Java\dwebapp-vert-x\user-webapp-vert-x\target\user-webapp-vert-x-1.0.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:3.2.3:shade (default) @ user-webapp-vert-x ---
+[INFO] Including io.vertx:vertx-rx-java2:jar:4.0.3 in the shaded jar.
+[INFO] Including io.vertx:vertx-core:jar:4.0.3 in the shaded jar.
+[INFO] Including io.netty:netty-common:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-buffer:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-transport:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-handler:jar:4.1.60.Final in the 
+shaded jar.
+[INFO] Including io.netty:netty-codec:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-handler-proxy:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec-socks:jar:4.1.60.Final in 
+the shaded jar.
+[INFO] Including io.netty:netty-codec-http:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec-http2:jar:4.1.60.Final in 
+the shaded jar.
+[INFO] Including io.netty:netty-resolver:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-resolver-dns:jar:4.1.60.Final in the shaded jar.
+[INFO] Including io.netty:netty-codec-dns:jar:4.1.60.Final in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-core:jar:2.11.3 in the shaded jar.
+[INFO] Including io.vertx:vertx-rx-java2-gen:jar:4.0.3 in the shaded jar.
+[INFO] Including io.reactivex.rxjava2:rxjava:jar:2.2.12 in the shaded jar.
+[INFO] Including org.reactivestreams:reactive-streams:jar:1.0.3 
+in the shaded jar.
+[INFO] Including io.vertx:vertx-rx-gen:jar:4.0.3 in the shaded jar.
+[INFO] Including io.vertx:vertx-codegen:jar:4.0.3 in the shaded 
+jar.
+[INFO] Including io.vertx:vertx-web:jar:4.0.3 in the shaded jar.[INFO] Including io.vertx:vertx-web-common:jar:4.0.3 in the shaded jar.
+[INFO] Including io.vertx:vertx-auth-common:jar:4.0.3 in the shaded jar.
+[INFO] Including io.vertx:vertx-bridge-common:jar:4.0.3 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-classic:jar:1.2.3 in the shaded jar.
+[INFO] Including ch.qos.logback:logback-core:jar:1.2.3 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.25 in the shaded jar.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] netty-buffer-4.1.60.Final.jar, netty-codec-4.1.60.Final.jar, netty-codec-dns-4.1.60.Final.jar, netty-codec-http-4.1.60.Final.jar, netty-codec-http2-4.1.60.Final.jar, netty-codec-socks-4.1.60.Final.jar, netty-common-4.1.60.Final.jar, netty-handler-4.1.60.Final.jar, netty-handler-proxy-4.1.60.Final.jar, netty-resolver-4.1.60.Final.jar, netty-resolver-dns-4.1.60.Final.jar, netty-transport-4.1.60.Final.jar define 1 overlapping resources: 
+[WARNING]   - META-INF/io.netty.versions.properties
+[WARNING] jackson-core-2.11.3.jar, logback-classic-1.2.3.jar, logback-core-1.2.3.jar, netty-buffer-4.1.60.Final.jar, netty-codec-4.1.60.Final.jar, netty-codec-dns-4.1.60.Final.jar, netty-codec-http-4.1.60.Final.jar, netty-codec-http2-4.1.60.Final.jar, netty-codec-socks-4.1.60.Final.jar, netty-common-4.1.60.Final.jar, netty-handler-4.1.60.Final.jar, netty-handler-proxy-4.1.60.Final.jar, netty-resolver-4.1.60.Final.jar, netty-resolver-dns-4.1.60.Final.jar, netty-transport-4.1.60.Final.jar, reactive-streams-1.0.3.jar, rxjava-2.2.12.jar, slf4j-api-1.7.25.jar, user-webapp-vert-x-1.0.jar, vertx-auth-common-4.0.3.jar, vertx-bridge-common-4.0.3.jar, vertx-codegen-4.0.3.jar, vertx-core-4.0.3.jar, vertx-rx-gen-4.0.3.jar, vertx-rx-java2-4.0.3.jar, vertx-rx-java2-gen-4.0.3.jar, vertx-web-4.0.3.jar, vertx-web-common-4.0.3.jar define 
+1 overlapping resources:
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] maven-shade-plugin has detected that some class files 
+are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the class is copied to the uber jar.[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on  
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See http://maven.apache.org/plugins/maven-shade-plugin/
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ 
+user-webapp-vert-x ---
+[INFO] Installing C:\SRC\Java\dwebapp-vert-x\user-webapp-vert-x\target\user-webapp-vert-x-1.0.jar to C:\Users\Nik-i7\.m2\repository\com\ntrajic\user-webapp-vert-x\1.0\user-webapp-vert-x-1.0.jar
+[INFO] Installing C:\SRC\Java\dwebapp-vert-x\user-webapp-vert-x\pom.xml to C:\Users\Nik-i7\.m2\repository\com\ntrajic\user-webapp-vert-x\1.0\user-webapp-vert-x-1.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Scalable Distributed Vue WebApps Based on Vert.x Actors 1.0:
+[INFO] 
+[INFO] Scalable Distributed Vue WebApps Based on Vert.x Actors SUCCESS [  0.498 s]
+[INFO] Dashboard webapp ................................... SUCCESS [ 11.373 s]
+[INFO] User webapp ........................................ SUCCESS [  6.399 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18.407 s
+[INFO] Finished at: 2022-01-18T12:54:54-08:00
+[INFO] ------------------------------------------------------------------------
